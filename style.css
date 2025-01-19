@@ -6883,6 +6883,10 @@ hr {
   border-radius: 25px;
   background-color: #110e18;
 }
+
+.EventXcard a {
+  text-decoration: none;
+}
 .image-content,
 .EventXcard-content{
   display: flex;

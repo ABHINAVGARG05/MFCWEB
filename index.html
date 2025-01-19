@@ -44,6 +44,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://kit.fontawesome.com/77dc8f63a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <style>
         #particles-js {
             position: fixed;
@@ -182,6 +185,62 @@
         }
     }
 </style>
+
+<style>
+    .swiper {
+        overflow: visible !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #ff5722;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        color: #ff9800;
+    }
+
+    .swiper-button-next {
+        right: -20px !important;
+    }
+
+    .swiper-button-prev {
+        left: -20px !important;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 30px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        transform: translateY(-50%) scale(1.2);
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #ff5722;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #ff9800;
+    }
+
+
+    .swiper-pagination-bullet:hover {
+        transform: scale(1.2);
+        background-color: #ffcc00;
+    }
+
+</style>
+
 
 <body class="body">
     <div id="particles-js"></div>
@@ -372,179 +431,182 @@
                 </div>
 
                 <!-- Events -->
-
                 <div id="Event" class="section_header_eve">
                     <div class="contain_eve">
                         <h1 class="eve_head">Check out the Events at MFC</h1>
-                        <p class="eve_para">MFC VIT boasts a wide array of successful events conducted throughout the
-                            year including speaker sessions with renowned technocrats, competitive coding events, and
-                            many more.
+                        <p class="eve_para">
+                            MFC VIT boasts a wide array of successful events conducted throughout
+                            the year including speaker sessions with renowned technocrats,
+                            competitive coding events, and many more.
                         </p>
                     </div>
                 </div>
+
                 <div class="section_evexx">
                     <div class="Event_body">
-
                         <div class="slide-container swiper">
                             <div class="slide-content">
-                                <div class="EventXcard-wrapper swiper-wrapper">
-                                    <div class="EventXcard swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-
-                                            <div class="EventXcard-image">
-                                                <img src="img/bug.png" alt="" class="EventXcard-img">
-                                            </div>
-                                        </div>
-
-                                        <div class="EventXcard-content">
-                                            <h2 class="name">Bug Venture</h2>
-                                            <p class="description">This event revolved around the
-                                                game of Bugs and brains, a
-                                                quest in which the participants
-                                                would solve bugs to get
-                                                questions which would bend
-                                                their minds and make them think
-                                                twice about their capabilities
-                                                and choices.</p>
-                                            <div class="date">
-                                                <h3 class="date_in">DATE-</h3>
-                                                <p class="date_in_in">19/07/23</p>
-                                            </div>
-                                            <!-- <button class="button">View More</button> -->
-                                        </div>
-                                    </div>
-                                    <div class="EventXcard swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-
-                                            <div class="EventXcard-image">
-                                                <img src="img/mozcode.png" alt="" class="EventXcard-img">
-                                            </div>
-                                        </div>
-
-                                        <div class="EventXcard-content">
-                                            <h2 class="name">Mozcode</h2>
-                                            <p class="description">MFC-VIT's flagship event needs no introduction
-                                                ,Mozcode'21 a one of a kind competitive coding event was a huge success
-                                                spanning over 3 rounds and 2 days time provided an unique opportunity to
-                                                participants to test their skill in a race against time in an intense
-                                                competitive atmosphere.</p>
-                                            <div class="date">
-                                                <h3 class="date_in">DATE-</h3>
-                                                <p class="date_in_in">19/07/23</p>
-                                            </div>
-
-                                            <!-- <button class="button">View More</button> -->
-                                        </div>
-                                    </div>
-                                    <div class="EventXcard swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-
-                                            <div class="EventXcard-image">
-                                                <img src="img/marvel.png" alt="" class="EventXcard-img">
-                                            </div>
-                                        </div>
-
-                                        <div class="EventXcard-content">
-                                            <h2 class="name">ML Marvel</h2>
-                                            <p class="description">MFC-VIT conducted a one of a kind machine learning
-                                                series spanning over three episodes where participants got to learn
-                                                various machine learning algorithms along with a follow up live project
-                                                demonstrations helping participants to solidify a foundation in the
-                                                concepts of machine learning.</p>
-                                            <div class="date">
-                                                <h3 class="date_in">DATE-</h3>
-                                                <p class="date_in_in">19/07/23</p>
-                                            </div>
-
-                                            <!-- <button class="button">View More</button> -->
-                                        </div>
-                                    </div>
-                                    <div class="EventXcard swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-
-                                            <div class="EventXcard-image">
-                                                <img src="img/pv.png" alt="" class="EventXcard-img">
-                                            </div>
-                                        </div>
-
-                                        <div class="EventXcard-content">
-                                            <h2 class="name">Parallax View</h2>
-                                            <p class="description">Metaverse has become the newest macro goal for tech
-                                                industries to invest in and to see the world in a new perspective with
-                                                the help of AR and VR technologies. MFC-VIT conducted "The Parallax
-                                                View: Bring the world to wherever you are" and "The Parallax View:
-                                                Experience what you see" where reputed speakers provided all explanation
-                                                and clarifications to the audience regarding AR and VR technologies.</p>
-                                            <div class="date">
-                                                <h3 class="date_in">DATE-</h3>
-                                                <p class="date_in_in">19/07/23</p>
-                                            </div>
-
-                                            <!-- <button class="button">View More</button> -->
-                                        </div>
-                                    </div>
-                                    <div class="EventXcard swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-
-                                            <div class="EventXcard-image">
-                                                <img src="img/web3.png" alt="" class="EventXcard-img">
-                                            </div>
-                                        </div>
-
-                                        <div class="EventXcard-content">
-                                            <h2 class="name">Web3 : A vision of Future</h2>
-                                            <p class="description">The event was a one hour long AMA session with our
-                                                acclaimed speaker, Mr. Anshul Rustaggi who is founder and CEO of
-                                                Zionverse and an expert in Web3 and blockchain technology. The session
-                                                was an all out interactive session wherein attendees could clarify any
-                                                of their doubts about web3 and cryptocurrency.</p>
-                                            <div class="date">
-                                                <h3 class="date_in">DATE-</h3>
-                                                <p class="date_in_in">19/07/23</p>
-                                            </div>
-
-                                            <!-- <button class="button">View More</button> -->
-                                        </div>
-                                    </div>
-                                    <div class="EventXcard swiper-slide">
-                                        <div class="image-content">
-                                            <span class="overlay"></span>
-
-                                            <div class="EventXcard-image">
-                                                <img src="img/django.png" alt="" class="EventXcard-img">
-                                            </div>
-                                        </div>
-
-                                        <div class="EventXcard-content">
-                                            <h2 class="name">Django Series</h2>
-                                            <p class="description">MFC-VIT conducted a full Django tutorial throughout
-                                                the course of 4 episodes where hosted live on YouTube where participants
-                                                could learn Django essentials right from scratch and then build on it
-                                            </p>
-                                            <div class="date">
-                                                <h3 class="date_in">DATE-</h3>
-                                                <p class="date_in_in">19/07/23</p>
-                                            </div>
-
-                                            <!-- <button class="button">View More</button> -->
-                                        </div>
-                                    </div>
-
-                                </div>
+                                <div id="eventCardsWrapper" class="EventXcard-wrapper swiper-wrapper""></div>
                             </div>
-
                             <div class="swiper-button-next swiper-navBtn"></div>
                             <div class="swiper-button-prev swiper-navBtn"></div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
-
                 </div>
+
+                <script>
+                    const events = [
+                      {
+                        name: "TechWars",
+                        description:
+                          "Compete in a thrilling campus-wide WAR, where your team's strategy is the key to victory. Solve coding questions and conquer territories, play mini-games that offer offline power-ups, sharpening your skills while keeping the fun factor high.",
+                        date: "28/09/24",
+                        imgSrc: "img/techwars.png",
+                        link: "https://github.com/MFC-VIT/TechWars-Frontend",
+                      },
+                      {
+                        name: "Code to Survive",
+                        description:
+                          "Step into a world where code meets crime, and your wits are your only weapon. Code To Survive blends the thrill of an escape room, the intrigue of a murder mystery, and the strategy of a high-stakes criminal hunt—all in one three round immersive event.",
+                        date: "27/09/24",
+                        imgSrc: "img/code_to_survive.png",
+                        link: "https://github.com/MFC-VIT/CTS-BE-24",
+                      },
+                      {
+                        name: "Scavenger of the Year",
+                        description:
+                          "Embark on an exhilarating scavenger hunt filled with thrilling tasks and challenges! A handpicked list of objectives and riddles will propel your team into a race against time. Dive into side games to unlock exclusive powers that might tip the scales in your favor!",
+                        date: "03/03/24",
+                        imgSrc: "img/scavenger.png",
+                        link: "https://github.com/MFC-VIT/SOTY-Backend-24",
+                      },
+                      {
+                        name: "InnovationX",
+                        description:
+                          "The 36-hour hackathon by Mozilla Firefox Club and Advertisement and Marketing Club featured intense ideation, mentorship sessions, and project work, concluding with presentations from the top five teams and a celebratory closing.",
+                        date: "18/03/24",
+                        imgSrc: "img/innovationx.png",
+                        link: "https://github.com/MFC-VIT/InnovationX-24",
+                      },
+                      {
+                        name: "Cyber Security and Ethical Hacking",
+                        description:
+                          "The dynamic one-of-its-kind speaker session, featuring Mrs. Pooja V Joshi from EC-Council, focused on enhancing participants' understanding of privacy and cybersecurity.",
+                        date: "13/03/24",
+                        imgSrc: "img/cybersec.png",
+                        link: "https://www.instagram.com/mfc_vit/",
+                      },
+                      {
+                        name: "CodeCraft",
+                        description:
+                          "This interactive workshop is designed to introduce participants to the fundamentals of JavaScript and the Document Object Model (DOM). This event is tailored for beginners who want to enhance their web development skills by gaining a solid understanding of these core technologies.",
+                        date: "07/03/24",
+                        imgSrc: "img/codecraft.png",
+                        link: "https://www.instagram.com/mfc_vit/",
+                      },
+                      {
+                        name: "CloudForage",
+                        description:
+                          "CloudForage, led by cloud technology expert Mr. Balamurugan G, was an engaging offline session on AWS Cloud Computing. Concepts covered included AWS fundamentals, advanced cloud architecture, and best practices for building scalable, secure, and innovative projects—perfect for those looking to deepen their cloud expertise and stay ahead in tech!",
+                        date: "13/08/24",
+                        imgSrc: "img/cloudforage.png",
+                        link: "https://www.instagram.com/mfc_vit/",
+                      },
+                      {
+                        name: "WebWise",
+                        description:
+                          "Mozilla Firefox Club VIT Vellore brought web development skills to young minds at Williams School! In an interactive session, students explored website creation using HTML, CSS, and JavaScript. They also learned essential tips for securing their sites against common online threats, empowering them to build and protect their digital spaces.",
+                        date: "09/11/24",
+                        imgSrc: "img/webwise.png",
+                        link: "https://www.instagram.com/mfc_vit/",
+                      },
+                      {
+                        name: "Queue-rious Coders",
+                        description:
+                          "Queue up for Queue-rious Coders! This dynamic coding event invites participants of all levels to dive into the complexities of stack and queue data structures. Tackle real-world challenges designed to test and enhance your understanding of these essentials, boost your algorithmic skills, and compete for coding mastery!",
+                        date: "24/10/24",
+                        imgSrc: "img/queue_rious.png",
+                        link: "https://www.instagram.com/mfc_vit/",
+                      },
+                      {
+                        name: "Arena.exe",
+                        description:
+                          "Step into Arena.exe! Mozilla Firefox Club presents a thrilling event where participants dive into a game portal packed with challenges. Compete in strategic and skill-based games, connect with fellow gamers, and fight your way to the top!",
+                        date: "08/11/24",
+                        imgSrc: "img/arena.png",
+                        link: "https://www.instagram.com/mfc_vit/",
+                      },
+                      {
+                        name: "WebWhiz",
+                        description:
+                          "This event by Mozilla Firefox Club brought students together in a hands-on session on HTML and CSS, where participants dove into the essentials of web development by creating their own portfolio websites. This interactive workshop aimed to boost practical skills and inspire future web projects!",
+                        date: "18/04/24",
+                        imgSrc: "img/webwhiz.png",
+                        link: "https://www.instagram.com/mfc_vit/",
+                      },
+                    ];
+                  
+                    function createEventCard(event) {
+                      const card = document.createElement("div");
+                      card.className = "EventXcard swiper-slide";
+                  
+                      card.innerHTML = `
+                        <a href="${event.link}" target="_blank" class="event-card-link">
+                          <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="EventXcard-image">
+                              <img src="${event.imgSrc}" alt="${event.name}" class="EventXcard-img">
+                            </div>
+                          </div>
+                          <div class="EventXcard-content">
+                            <h2 class="name" style="text-align: center;">${event.name}</h2>
+                            <p class="description">${event.description}</p>
+                            <div class="date">
+                              <h3 class="date_in">DATE-</h3>
+                              <p class="date_in_in">${event.date}</p>
+                            </div>
+                          </div>
+                        </a>
+                      `;
+                  
+                      return card;
+                    }
+                  
+                    function renderEvents() {
+                      const wrapper = document.getElementById("eventCardsWrapper");
+                      events.forEach((event) => {
+                        const eventCard = createEventCard(event);
+                        wrapper.appendChild(eventCard);
+                      });
+                    }
+                  
+                    function initializeSwiper() {
+                      new Swiper(".swiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        pagination: {
+                          el: ".swiper-pagination",
+                          clickable: true,
+                        },
+                        navigation: {
+                          nextEl: ".swiper-button-next",
+                          prevEl: ".swiper-button-prev",
+                        },
+                        breakpoints: {
+                          640: { slidesPerView: 2, spaceBetween: 20 },
+                          768: { slidesPerView: 3, spaceBetween: 30 },
+                          1024: { slidesPerView: 4, spaceBetween: 40 },
+                        },
+                      });
+                    }
+                  
+                    document.addEventListener("DOMContentLoaded", () => {
+                      renderEvents();
+                      initializeSwiper();
+                    });
+                  </script>
+                  
 
                 <!-- for 2023 -->
 
@@ -650,210 +712,211 @@
                 </div>
 
 
-                    <div id="Blog" class="section header"></div>
+                <div id="Blog" class="section header"></div>
 
-                    <script>
-                        const blogPosts = [
-                            {
-                                id: 1,
-                                title: "Red Teaming: The Golden Ticket Attack",
-                                image: "https://miro.medium.com/v2/resize:fit:1400/1*xtMTiQmgvYOUthu8Ly1O2w.png",
-                                description: "The world of cybersecurity is constantly evolving, with new threats emerging regularly. To stay ahead of these ever-growing risks, organizations need to prepare proactively.",
-                                author: "Utkarsh Tyagi",
-                                autheredDate: "2024-12-28",
-                                authorTitle: "Firefox Club",
-                                authorLink: "https://medium.com/mozilla-firefox-club/red-teaming-the-golden-ticket-attack-9447fc423970",
-                                imageUrl: "https://miro.medium.com/v2/resize:fill:176:176/1*iDEnh-js3kFGnoHmXWEfaw.png"
-                            },
-                            {
-                                id: 2,
-                                title: "Skip the lag, keep the cache: The Hidden Shortcut to Lightning-Fast Web Pages",
-                                image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fe2r3p4d8tc88k9iekcyy.png",
-                                description: "Learn how to reduce web page rendering time by over 7x using the content-visibility CSS property. This blog explains how it optimizes rendering by skipping offscreen elements, improves performance in SPAs, and outperforms display: none for hiding/unhiding content efficiently.",
-                                author: "Keshav Aneja",
-                                autheredDate: "2025-01-13",
-                                authorTitle: "Firefox Club",
-                                authorLink: "https://medium.com/@keshav.aneja09/skip-the-lag-keep-the-cache-the-hidden-shortcut-to-lightning-fast-web-pages-c15ac4598c97",
-                                imageUrl: "https://miro.medium.com/v2/resize:fill:176:176/1*WJ98Hf_OVsJ0dG8J0sA0dA.jpeg",
-                            },
-                            {
-                                id: 3,
-                                title: "Algorithmic Secrets of Viral Content",
-                                image: "https://miro.medium.com/v2/resize:fit:1400/1*hpa6rNYRX524A2djnDHToQ.jpeg",
-                                description: "Have you ever wondered why random content like meme templates, catchy songs, or viral dance moves suddenly dominate social media feeds? At first glance, what may seem like instant online virality is the outcome of carefully designed algorithms.",
-                                author: "Sujaa Shri",
-                                autheredDate: "2024-11-11",
-                                authorTitle: "Firefox Club",
-                                authorLink: "https://medium.com/mozilla-firefox-club/algorithmic-secrets-of-viral-content-08cc9567c553",
-                                imageUrl: "https://miro.medium.com/v2/da:true/resize:fill:176:176/0*ckbjiKN4OrP1NkNi",
-                            },
-                            {
-                                id: 4,
-                                title: "The Rise of AI Powered Code Generation: What it means for developers",
-                                image: "https://miro.medium.com/v2/resize:fit:1400/0*5-GQBqSzRsVDmdlH.jpeg",
-                                description: "In recent years, artificial intelligence (AI) has made remarkable strides across various fields, including software development. One of its most fascinating applications is in AI-powered code generation.",
-                                author: "Vajran Kannadasan",
-                                autheredDate: "2024-10-31",
-                                authorTitle: "Firefox Club",
-                                authorLink: "https://medium.com/mozilla-firefox-club/the-rise-of-ai-powered-code-generation-what-it-means-for-developers-1fd2d52d3bc5",
-                                imageUrl: "https://miro.medium.com/v2/da:true/resize:fill:176:176/0*OQbPnt8nQwm3mLZG",
-                            }
-                        ];
-                    
-                        function createBlogPostElement(postData) {
-                            const postContainer = document.createElement('a'); 
-                            postContainer.classList.add('itemcontainer');
-                            postContainer.href = postData.authorLink;
-                            postContainer.target = '_blank';
-                            postContainer.style.textDecoration = 'none';
-                    
-                            const radialGradient = document.createElement('div');
-                            radialGradient.classList.add('radial-gradient');
-                            postContainer.appendChild(radialGradient);
-                    
-                            const blogImage = document.createElement('img');
-                            blogImage.src = postData.image;
-                            blogImage.alt = `${postData.title} Image`;
-                            blogImage.style = 'width: 100%; height: 200px; object-position: center; object-fit: cover;';
-                            postContainer.appendChild(blogImage);
-                    
-                            const title = document.createElement('h3');
-                            title.classList.add('sectionsmallheaders');
-                            title.textContent = postData.title;
-                            postContainer.appendChild(title);
-                    
-                            const description = document.createElement('p');
-                            description.classList.add('reviewparagraph', 'blog-desc');
-                            description.textContent = postData.description;
-                            postContainer.appendChild(description);
-                    
-                            const authorContainer = document.createElement('div');
-                            authorContainer.classList.add('author-container', 'flex');
-                    
-                            const authorImage = document.createElement('img');
-                            authorImage.src = postData.imageUrl;
-                            authorImage.alt = '';
-                            authorImage.classList.add('imagetestimonial');
-                            authorContainer.appendChild(authorImage);
-                    
-                            const nameContainer = document.createElement('div');
-                            nameContainer.classList.add('namecontainer');
-                    
-                            const authorName = document.createElement('p');
-                            authorName.classList.add('reviewparagraph', 'name');
-                            authorName.textContent = postData.author;
-                            nameContainer.appendChild(authorName);
-                    
-                            const authorTitle = document.createElement('p');
-                            authorTitle.classList.add('reviewparagraph', 'title');
-                            const authorLink = document.createElement('a');
-                            authorLink.href = postData.authorLink;
-                            authorLink.textContent = postData.authorTitle;
-                            authorLink.style.textDecoration = 'none';
-                            authorTitle.appendChild(authorLink);
-                            nameContainer.appendChild(authorTitle);
-                    
-                            const authoredDate = document.createElement('p');
-                            authoredDate.classList.add('reviewparagraph', 'date');
-                            authoredDate.textContent = `Date: ${postData.autheredDate}`;
-                            nameContainer.appendChild(authoredDate);
-                    
-                            authorContainer.appendChild(nameContainer);
-                            postContainer.appendChild(authorContainer);
-                    
-                            return postContainer;
+                <script>
+                    const blogPosts = [
+                        {
+                            id: 1,
+                            title: "Red Teaming: The Golden Ticket Attack",
+                            image: "https://miro.medium.com/v2/resize:fit:1400/1*xtMTiQmgvYOUthu8Ly1O2w.png",
+                            description: "The world of cybersecurity is constantly evolving, with new threats emerging regularly. To stay ahead of these ever-growing risks, organizations need to prepare proactively.",
+                            author: "Utkarsh Tyagi",
+                            autheredDate: "2024-12-28",
+                            authorTitle: "Firefox Club",
+                            authorLink: "https://medium.com/mozilla-firefox-club/red-teaming-the-golden-ticket-attack-9447fc423970",
+                            imageUrl: "https://miro.medium.com/v2/resize:fill:176:176/1*iDEnh-js3kFGnoHmXWEfaw.png"
+                        },
+                        {
+                            id: 2,
+                            title: "Skip the lag, keep the cache: The Hidden Shortcut to Lightning-Fast Web Pages",
+                            image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fe2r3p4d8tc88k9iekcyy.png",
+                            description: "Learn how to reduce web page rendering time by over 7x using the content-visibility CSS property. This blog explains how it optimizes rendering by skipping offscreen elements, improves performance in SPAs, and outperforms display: none for hiding/unhiding content efficiently.",
+                            author: "Keshav Aneja",
+                            autheredDate: "2025-01-13",
+                            authorTitle: "Firefox Club",
+                            authorLink: "https://medium.com/@keshav.aneja09/skip-the-lag-keep-the-cache-the-hidden-shortcut-to-lightning-fast-web-pages-c15ac4598c97",
+                            imageUrl: "https://miro.medium.com/v2/resize:fill:176:176/1*WJ98Hf_OVsJ0dG8J0sA0dA.jpeg",
+                        },
+                        {
+                            id: 3,
+                            title: "Algorithmic Secrets of Viral Content",
+                            image: "https://miro.medium.com/v2/resize:fit:1400/1*hpa6rNYRX524A2djnDHToQ.jpeg",
+                            description: "Have you ever wondered why random content like meme templates, catchy songs, or viral dance moves suddenly dominate social media feeds? At first glance, what may seem like instant online virality is the outcome of carefully designed algorithms.",
+                            author: "Sujaa Shri",
+                            autheredDate: "2024-11-11",
+                            authorTitle: "Firefox Club",
+                            authorLink: "https://medium.com/mozilla-firefox-club/algorithmic-secrets-of-viral-content-08cc9567c553",
+                            imageUrl: "https://miro.medium.com/v2/da:true/resize:fill:176:176/0*ckbjiKN4OrP1NkNi",
+                        },
+                        {
+                            id: 4,
+                            title: "The Rise of AI Powered Code Generation: What it means for developers",
+                            image: "https://miro.medium.com/v2/resize:fit:1400/0*5-GQBqSzRsVDmdlH.jpeg",
+                            description: "In recent years, artificial intelligence (AI) has made remarkable strides across various fields, including software development. One of its most fascinating applications is in AI-powered code generation.",
+                            author: "Vajran Kannadasan",
+                            autheredDate: "2024-10-31",
+                            authorTitle: "Firefox Club",
+                            authorLink: "https://medium.com/mozilla-firefox-club/the-rise-of-ai-powered-code-generation-what-it-means-for-developers-1fd2d52d3bc5",
+                            imageUrl: "https://miro.medium.com/v2/da:true/resize:fill:176:176/0*OQbPnt8nQwm3mLZG",
                         }
-                    
-                        function renderBlogPosts() {
-                            const blogSection = document.getElementById('Blog');
-                            const container = document.createElement('div');
-                            container.classList.add('container', 'gallery', 'bottomborder');
-                    
-                            const header = document.createElement('h2');
-                            header.classList.add('sectionnewheaders');
-                            header.innerHTML = 'Blog Posts<br />';
-                            container.appendChild(header);
-                    
-                            const reviewsContainer = document.createElement('div');
-                            reviewsContainer.classList.add('reviewscontainer');
-                    
-                            const sliderItemReview = document.createElement('div');
-                            sliderItemReview.classList.add('slideritemreview');
-                    
-                            const verticalTestimonialGrid1 = document.createElement('div');
-                            verticalTestimonialGrid1.classList.add('verticaltestimonialgrid');
-                            blogPosts.slice(0, 2).forEach(post => {
-                                verticalTestimonialGrid1.appendChild(createBlogPostElement(post));
-                            });
-                    
-                            const verticalTestimonialGrid2 = document.createElement('div');
-                            verticalTestimonialGrid2.classList.add('verticaltestimonialgrid');
-                            blogPosts.slice(2).forEach(post => {
-                                verticalTestimonialGrid2.appendChild(createBlogPostElement(post));
-                            });
-                    
-                            sliderItemReview.appendChild(verticalTestimonialGrid1);
-                            sliderItemReview.appendChild(verticalTestimonialGrid2);
-                            reviewsContainer.appendChild(sliderItemReview);
-                            container.appendChild(reviewsContainer);
-                    
-                            blogSection.appendChild(container);
-                        }
-                    
-                        renderBlogPosts();
-                    </script>
-                    
-                    
+                    ];
 
-                    <a href="https://medium.com/mozilla-firefox-club" class="btn">Read More</a>
+                    function createBlogPostElement(postData) {
+                        const postContainer = document.createElement('a');
+                        postContainer.classList.add('itemcontainer');
+                        postContainer.href = postData.authorLink;
+                        postContainer.target = '_blank';
+                        postContainer.style = "text-decoration :none;";
 
-                    <div class="counts">
-                        <div class="p">
-                            <p id="counter">40+</p>
-                            <h4>Events</h4>
-                        </div>
-                        <div class="p">
-                            <p id="counter1">25+</p>
-                            <h4>Projects</h4>
-                        </div>
-                        <div class="p">
-                            <p id="counter2">20+</p>
-                            <h4>Articles</h4>
-                        </div>
-                        <div class="p">
-                            <p id="counter3">2000+</p>
-                            <h4>Followers</h4>
-                        </div>
+                        const radialGradient = document.createElement('div');
+                        radialGradient.classList.add('radial-gradient');
+                        postContainer.appendChild(radialGradient);
 
+                        const blogImage = document.createElement('img');
+                        blogImage.src = postData.image;
+                        blogImage.alt = `${postData.title} Image`;
+                        blogImage.style = 'width: 100%; height: 200px; object-position: center; object-fit: cover;';
+                        postContainer.appendChild(blogImage);
+
+                        const title = document.createElement('h3');
+                        title.classList.add('sectionsmallheaders');
+                        title.textContent = postData.title;
+                        postContainer.appendChild(title);
+
+                        const description = document.createElement('p');
+                        description.classList.add('reviewparagraph', 'blog-desc');
+                        description.textContent = postData.description;
+                        postContainer.appendChild(description);
+
+                        const authorContainer = document.createElement('div');
+                        authorContainer.classList.add('author-container', 'flex');
+
+                        const authorImage = document.createElement('img');
+                        authorImage.src = postData.imageUrl;
+                        authorImage.alt = '';
+                        authorImage.classList.add('imagetestimonial');
+                        authorContainer.appendChild(authorImage);
+
+                        const nameContainer = document.createElement('div');
+                        nameContainer.classList.add('namecontainer');
+
+                        const authorName = document.createElement('p');
+                        authorName.classList.add('reviewparagraph', 'name');
+                        authorName.textContent = postData.author;
+                        nameContainer.appendChild(authorName);
+
+                        const authorTitle = document.createElement('p');
+                        authorTitle.classList.add('reviewparagraph', 'title');
+                        const authorLink = document.createElement('a');
+                        authorLink.href = postData.authorLink;
+                        authorLink.textContent = postData.authorTitle;
+                        authorLink.style.textDecoration = 'none';
+                        authorTitle.appendChild(authorLink);
+                        nameContainer.appendChild(authorTitle);
+
+                        const authoredDate = document.createElement('p');
+                        authoredDate.classList.add('reviewparagraph', 'date');
+                        authoredDate.textContent = `Date: ${postData.autheredDate}`;
+                        nameContainer.appendChild(authoredDate);
+
+                        authorContainer.appendChild(nameContainer);
+                        postContainer.appendChild(authorContainer);
+
+                        return postContainer;
+                    }
+
+                    function renderBlogPosts() {
+                        const blogSection = document.getElementById('Blog');
+                        const container = document.createElement('div');
+                        container.style = "padding-left: 5%; padding-right: 5%;";
+                        container.classList.add('container', 'gallery', 'bottomborder');
+
+                        const header = document.createElement('h2');
+                        header.classList.add('sectionnewheaders');
+                        header.innerHTML = 'Blog Posts<br />';
+                        container.appendChild(header);
+
+                        const reviewsContainer = document.createElement('div');
+                        reviewsContainer.classList.add('reviewscontainer');
+
+                        const sliderItemReview = document.createElement('div');
+                        sliderItemReview.classList.add('slideritemreview');
+
+                        const verticalTestimonialGrid1 = document.createElement('div');
+                        verticalTestimonialGrid1.classList.add('verticaltestimonialgrid');
+                        blogPosts.slice(0, 2).forEach(post => {
+                            verticalTestimonialGrid1.appendChild(createBlogPostElement(post));
+                        });
+
+                        const verticalTestimonialGrid2 = document.createElement('div');
+                        verticalTestimonialGrid2.classList.add('verticaltestimonialgrid');
+                        blogPosts.slice(2).forEach(post => {
+                            verticalTestimonialGrid2.appendChild(createBlogPostElement(post));
+                        });
+
+                        sliderItemReview.appendChild(verticalTestimonialGrid1);
+                        sliderItemReview.appendChild(verticalTestimonialGrid2);
+                        reviewsContainer.appendChild(sliderItemReview);
+                        container.appendChild(reviewsContainer);
+
+                        blogSection.appendChild(container);
+                    }
+
+                    renderBlogPosts();
+                </script>
+
+
+
+                <a href="https://medium.com/mozilla-firefox-club" class="btn">Read More</a>
+
+                <div class="counts">
+                    <div class="p">
+                        <p id="counter">40+</p>
+                        <h4>Events</h4>
+                    </div>
+                    <div class="p">
+                        <p id="counter1">25+</p>
+                        <h4>Projects</h4>
+                    </div>
+                    <div class="p">
+                        <p id="counter2">20+</p>
+                        <h4>Articles</h4>
+                    </div>
+                    <div class="p">
+                        <p id="counter3">2000+</p>
+                        <h4>Followers</h4>
                     </div>
 
-                    <div id="Faculty" class="section header lastsection">
-                        <div class="container gallery bottomborder bottomnone topbordernone">
-                            <div class="titlecontainerbottom">
-                                <h2 class="sectionnewheaders">Our Faculty Coordinator<br /></h2>
-                            </div>
-                            <div class="faculty-card-container flex">
-                                <div class="card-wrapper flex">
-                                    <div class="faculty-card faculty-card-front  flex">
-                                        <div class="info-card flex">
-                                            <div class="profile-pic flex">
-                                                <img src="img/profile.png" alt="Mr. Jayakumar S" />
-                                            </div>
-                                            <div class="faculty-name">Mr. Jayakumar S</div>
-                                            <div class="position">Faculty Coordinator</div>
+                </div>
 
+                <div id="Faculty" class="section header lastsection">
+                    <div class="container gallery bottomborder bottomnone topbordernone">
+                        <div class="titlecontainerbottom">
+                            <h2 class="sectionnewheaders">Our Faculty Coordinator<br /></h2>
+                        </div>
+                        <div class="faculty-card-container flex">
+                            <div class="card-wrapper flex">
+                                <div class="faculty-card faculty-card-front  flex">
+                                    <div class="info-card flex">
+                                        <div class="profile-pic flex">
+                                            <img src="img/profile.png" alt="Mr. Jayakumar S" />
                                         </div>
-                                        <p class="check">Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1
-                                            at
-                                            Vellore Institute of Technology (VIT) in the School of Computer Science and
-                                            Engineering (SCOPE). Jayakumar's areas of expertise include Open Source
-                                            Programming, Network Security, Storage Technologies, and Machine Learning.
-                                            His
-                                            research interests are in the use of technology in education and developing
-                                            open-source software that takes into consideration the unique needs of
-                                            learners
-                                        </p>
-                                        <!-- <div class="flex socials">
+                                        <div class="faculty-name">Mr. Jayakumar S</div>
+                                        <div class="position">Faculty Coordinator</div>
+
+                                    </div>
+                                    <p class="check">Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1
+                                        at
+                                        Vellore Institute of Technology (VIT) in the School of Computer Science and
+                                        Engineering (SCOPE). Jayakumar's areas of expertise include Open Source
+                                        Programming, Network Security, Storage Technologies, and Machine Learning.
+                                        His
+                                        research interests are in the use of technology in education and developing
+                                        open-source software that takes into consideration the unique needs of
+                                        learners
+                                    </p>
+                                    <!-- <div class="flex socials">
                           <div class="social-icon flex">
                             <a href="https://www.linkedin.com/in/iamjayakumars">
                             <img src="img/linkedin.png" alt="linkedin" />
@@ -867,54 +930,54 @@
                             <img src="img/email.png" alt="email"/>
                           </div>
                         </div> -->
-                                        <div class="profile-icons">
-                                            <a class="profile_fab" href="https://www.linkedin.com/in/iamjayakumars">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a>
-                                            <a class="profile_fab" href="https://github.com/iamjayakumars">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                        </div>
+                                    <div class="profile-icons">
+                                        <a class="profile_fab" href="https://www.linkedin.com/in/iamjayakumars">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="profile_fab" href="https://github.com/iamjayakumars">
+                                            <i class="fab fa-github"></i>
+                                        </a>
                                     </div>
-                                    <!-- <div class="faculty-card faculty-card-back flex">
+                                </div>
+                                <!-- <div class="faculty-card faculty-card-back flex">
                         <p>Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1 at Vellore Institute of Technology (VIT) in the School of Computer Science and Engineering (SCOPE). Jayakumar's areas of expertise include Open Source Programming, Network Security, Storage Technologies, and Machine Learning. His research interests are in the use of technology in education and developing open-source software that takes into consideration the unique needs of learners</p>
                       </div> -->
-                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div id="Board" class="section header">
-                        <div class="container gallery bottomborder bottomnone topbordernone">
-                            <h2 class="sectionnewheaders">Our Team<br /></h2>
-                            <div id="board-members-container" class="benefitscontainer spacetop"></div>
-                        </div>
+                <div id="Board" class="section header">
+                    <div class="container gallery bottomborder bottomnone topbordernone">
+                        <h2 class="sectionnewheaders">Our Team<br /></h2>
+                        <div id="board-members-container" class="benefitscontainer spacetop"></div>
+                    </div>
 
-                        <script>
-                            // Data for board members
-                            const boardMembers = [
-                                { name: 'Utkarsh Tyagi', designation: 'Chairperson', image: './img_board/24-25/chair.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/utkarsh-tyagi-/', github: 'https://github.com/utkarsh-creator', instagram: 'https://www.instagram.com/utkarshtyagi07/' } },
-                                { name: 'Namah Singhal', designation: 'General Secretary', image: './img_board/24-25/gensec.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/namah-singhal-983446217/', github: 'https://github.com/NAMAH942', instagram: 'https://www.instagram.com/nam.ahhh28_/' } },
-                                { name: 'Chaitanay Kapoor', designation: 'Vice Chairperson', image: './img_board/24-25/vc.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/chaitanay-kapoor-717bb8299/', github: 'https://github.com/chaitanay2004', instagram: 'https://www.instagram.com/chaitanaykapoor/' } },
-                                { name: 'Vinayak Raina', designation: 'Co-Secretary', image: './img_board/24-25/cosec.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/vinayak-raina-08a71a253', github: 'https://github.com/RAINAVINAYAK16', instagram: 'https://www.instagram.com/raina.vinayak/' } },
-                                { name: 'Keshav Aneja', designation: 'Technical Head', image: './img_board/24-25/tech.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/keshav-aneja', github: 'https://github.com/Keshav-Aneja', instagram: 'https://www.instagram.com/k.aneja09/' } },
-                                { name: 'Harshit PG', designation: 'Projects Head', image: './img_board/24-25/project.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/harshit-p-g-a87623272/', github: 'https://github.com/HarshitPG', instagram: 'https://www.instagram.com/harshitpg/' } },
-                                { name: 'Sameer Mahindru', designation: 'Events Head', image: './img_board/24-25/events.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/sameer-mahindru-39ba91248/', github: 'https://github.com/CodesBySammy', instagram: 'https://www.instagram.com/spammyyy._._/' } },
-                                { name: 'Kandarp Chandra', designation: 'Research and Development Head', image: './img_board/24-25/r&d.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/kandarp-chandra-b32ba4251/', github: 'https://github.com/kandarpchandra', instagram: 'https://www.instagram.com/kandarp._._/' } },
-                                { name: 'Kanishka Viswanathan', designation: 'Publicity Head', image: './img_board/24-25/publicity.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/kanishka-viswanathan', github: 'https://github.com/KanishkaViswanathan', instagram: 'https://www.instagram.com/_kxnishhh/' } },
-                                { name: 'Divyansh Gautam', designation: 'Design Head', image: './img_board/24-25/design.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/divyansh-gautam-323b47266', github: 'https://github.com/i-divyansh', instagram: 'https://www.instagram.com/i._divyansh/' } },
-                                { name: 'Himika Bansal', designation: 'HR Head', image: './img_board/24-25/hr.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/himika-bansal', github: 'https://github.com/himika-bansal', instagram: 'https://www.instagram.com/himika.bansal/' } },
-                                { name: 'Anshul Kedia', designation: 'Finance Head', image: './img_board/24-25/finance.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/anshul-kedia-78965b245', github: 'https://github.com/anshulkedia', instagram: 'https://www.instagram.com/anshul.kediaaa/' } },
-                                { name: 'Harshvardhan Singh', designation: 'Management Head', image: './img_board/24-25/management.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/harshvardhan-singh-b66728250/', github: 'https://github.com/harshvar36', instagram: 'https://www.instagram.com/harshvar_0036/' } },
-                                { name: 'Akshat Kumar Jha', designation: 'Editorial Head', image: './img_board/24-25/editorial.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/akshat-jha-bbb861254', github: 'https://github.com/axe-hat', instagram: 'https://www.instagram.com/axe.hat/' } },
-                                { name: 'Kanha Khantaal', designation: 'Outreach Head', image: './img_board/24-25/outreach.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/kanha-khantaal-829302258', github: 'https://github.com/Kanha02052002', instagram: 'https://www.instagram.com/k2g_02/' } },
-                                { name: 'Samaksh Arjani', designation: 'Creative Head', image: './img_board/24-25/creative.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/samaksh-arjani-262a12253/', github: 'https://github.com/samaksharjani2004', instagram: 'https://www.instagram.com/chiiinuu._6/' } },
-                            ];
-                            // Function to generate HTML for board members
-                            const createBoardMembers = (members) => {
-                                const container = document.getElementById("board-members-container");
-                                members.forEach((member) => {
-                                    const memberHTML = `
+                    <script>
+                        // Data for board members
+                        const boardMembers = [
+                            { name: 'Utkarsh Tyagi', designation: 'Chairperson', image: './img_board/24-25/chair.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/utkarsh-tyagi-/', github: 'https://github.com/utkarsh-creator', instagram: 'https://www.instagram.com/utkarshtyagi07/' } },
+                            { name: 'Namah Singhal', designation: 'General Secretary', image: './img_board/24-25/gensec.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/namah-singhal-983446217/', github: 'https://github.com/NAMAH942', instagram: 'https://www.instagram.com/nam.ahhh28_/' } },
+                            { name: 'Chaitanay Kapoor', designation: 'Vice Chairperson', image: './img_board/24-25/vc.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/chaitanay-kapoor-717bb8299/', github: 'https://github.com/chaitanay2004', instagram: 'https://www.instagram.com/chaitanaykapoor/' } },
+                            { name: 'Vinayak Raina', designation: 'Co-Secretary', image: './img_board/24-25/cosec.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/vinayak-raina-08a71a253', github: 'https://github.com/RAINAVINAYAK16', instagram: 'https://www.instagram.com/raina.vinayak/' } },
+                            { name: 'Keshav Aneja', designation: 'Technical Head', image: './img_board/24-25/tech.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/keshav-aneja', github: 'https://github.com/Keshav-Aneja', instagram: 'https://www.instagram.com/k.aneja09/' } },
+                            { name: 'Harshit PG', designation: 'Projects Head', image: './img_board/24-25/project.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/harshit-p-g-a87623272/', github: 'https://github.com/HarshitPG', instagram: 'https://www.instagram.com/harshitpg/' } },
+                            { name: 'Sameer Mahindru', designation: 'Events Head', image: './img_board/24-25/events.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/sameer-mahindru-39ba91248/', github: 'https://github.com/CodesBySammy', instagram: 'https://www.instagram.com/spammyyy._._/' } },
+                            { name: 'Kandarp Chandra', designation: 'Research and Development Head', image: './img_board/24-25/r&d.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/kandarp-chandra-b32ba4251/', github: 'https://github.com/kandarpchandra', instagram: 'https://www.instagram.com/kandarp._._/' } },
+                            { name: 'Kanishka Viswanathan', designation: 'Publicity Head', image: './img_board/24-25/publicity.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/kanishka-viswanathan', github: 'https://github.com/KanishkaViswanathan', instagram: 'https://www.instagram.com/_kxnishhh/' } },
+                            { name: 'Divyansh Gautam', designation: 'Design Head', image: './img_board/24-25/design.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/divyansh-gautam-323b47266', github: 'https://github.com/i-divyansh', instagram: 'https://www.instagram.com/i._divyansh/' } },
+                            { name: 'Himika Bansal', designation: 'HR Head', image: './img_board/24-25/hr.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/himika-bansal', github: 'https://github.com/himika-bansal', instagram: 'https://www.instagram.com/himika.bansal/' } },
+                            { name: 'Anshul Kedia', designation: 'Finance Head', image: './img_board/24-25/finance.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/anshul-kedia-78965b245', github: 'https://github.com/anshulkedia', instagram: 'https://www.instagram.com/anshul.kediaaa/' } },
+                            { name: 'Harshvardhan Singh', designation: 'Management Head', image: './img_board/24-25/management.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/harshvardhan-singh-b66728250/', github: 'https://github.com/harshvar36', instagram: 'https://www.instagram.com/harshvar_0036/' } },
+                            { name: 'Akshat Kumar Jha', designation: 'Editorial Head', image: './img_board/24-25/editorial.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/akshat-jha-bbb861254', github: 'https://github.com/axe-hat', instagram: 'https://www.instagram.com/axe.hat/' } },
+                            { name: 'Kanha Khantaal', designation: 'Outreach Head', image: './img_board/24-25/outreach.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/kanha-khantaal-829302258', github: 'https://github.com/Kanha02052002', instagram: 'https://www.instagram.com/k2g_02/' } },
+                            { name: 'Samaksh Arjani', designation: 'Creative Head', image: './img_board/24-25/creative.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/samaksh-arjani-262a12253/', github: 'https://github.com/samaksharjani2004', instagram: 'https://www.instagram.com/chiiinuu._6/' } },
+                        ];
+                        // Function to generate HTML for board members
+                        const createBoardMembers = (members) => {
+                            const container = document.getElementById("board-members-container");
+                            members.forEach((member) => {
+                                const memberHTML = `
                             <div class="itemcontainer2 aligntop borderbottomnew">
                               <div class="iconcontainer">
                                 <div class="circular-image">
@@ -927,17 +990,17 @@
                                   <h3 class="heading-3">${member.name}</h3>
                                   <p class="paragraphdesign">${member.designation}<br /><br>
                                     ${member.socialLinks.linkedin
-                                            ? `<a class="profile_fab" href="${member.socialLinks.linkedin}" target="_blank"><i class="fab fa-linkedin-in"></i></a>`
-                                            : ""
-                                        }
+                                        ? `<a class="profile_fab" href="${member.socialLinks.linkedin}" target="_blank"><i class="fab fa-linkedin-in"></i></a>`
+                                        : ""
+                                    }
                                     ${member.socialLinks.github
-                                            ? `<a class="profile_fab" href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
-                                            : ""
-                                        }
+                                        ? `<a class="profile_fab" href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
+                                        : ""
+                                    }
                                     ${member.socialLinks.instagram
-                                            ? `<a class="profile_fab" href="${member.socialLinks.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>`
-                                            : ""
-                                        }
+                                        ? `<a class="profile_fab" href="${member.socialLinks.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>`
+                                        : ""
+                                    }
                                   </p>
                                 </div>
                               </div>
@@ -945,41 +1008,41 @@
                               <div class="eclipse benefitseclipse"></div>
                             </div>
                           `;
-                                    container.innerHTML += memberHTML;
-                                });
-                            };
+                                container.innerHTML += memberHTML;
+                            });
+                        };
 
-                            // Call the function to generate and inject board members
-                            createBoardMembers(boardMembers);
-                        </script>
-                    </div>
-                    <a href="alumniboard.html" class="btn">Alumni Board Members</a>
-                    <!--End new Branch-->
+                        // Call the function to generate and inject board members
+                        createBoardMembers(boardMembers);
+                    </script>
+                </div>
+                <a href="alumniboard.html" class="btn">Alumni Board Members</a>
+                <!--End new Branch-->
 
-                    <!-----contact----------------->
-                    <div id="contact">
-                        <div class="container">
-                            <div class="row">
-                                <div class="contact-left">
-                                    <h1 class="sub-titles">Contact Us</h1>
-                                    <p><i class="fa-solid fa-paper-plane"></i>pr.mozillavit@gmail.com</p>
+                <!-----contact----------------->
+                <div id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-titles">Contact Us</h1>
+                                <p><i class="fa-solid fa-paper-plane"></i>pr.mozillavit@gmail.com</p>
 
 
 
-                                </div>
-                                <div class="contact-right">
-                                    <form name="submit-to-google-sheet">
-                                        <input type="text" name="Name" placeholder="Your Name" required>
-                                        <input type="email" name="Email" placeholder="Your Email" required>
-                                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                                        <button type="submit" class="btn btn2">Submit</button>
-                                    </form>
-                                    <span id="msg"></span>
+                            </div>
+                            <div class="contact-right">
+                                <form name="submit-to-google-sheet">
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="email" name="Email" placeholder="Your Email" required>
+                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                    <button type="submit" class="btn btn2">Submit</button>
+                                </form>
+                                <span id="msg"></span>
 
-                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
 
