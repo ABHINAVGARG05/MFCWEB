@@ -3886,7 +3886,7 @@ label {
 
 .itemcontainer2 {
   z-index: 10;
-  width: 100%;
+  width: calc(25% - 16px);
   height: auto;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -4420,11 +4420,16 @@ form .btn2 {
   grid-column-gap: 2em;
   grid-row-gap: 2em;
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the items within the container */
 }
 
 .benefitscontainer.spacetop {
-  justify-content: center;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between items */
+  justify-content: center;
 }
 
 .benefitscontainer.spacetop.hide {
