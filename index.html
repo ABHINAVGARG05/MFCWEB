@@ -649,173 +649,211 @@
                     </div>
                 </div>
 
-                <div id="Blog" class="section header">
-                    <div class="container gallery bottomborder">
-                        <h2 class="sectionnewheaders">Blog Posts<br /></h2>
-                        <div class="reviewscontainer">
-                            <div class="slideritemreview">
-                                <div class="verticaltestimonialgrid">
-                                    <div class="itemcontainer">
-                                        <div class="radial-gradient"></div>
-                                        <h3 class="sectionsmallheaders blog-heading">A Comprehensive Guide :Creating
-                                            Your Own Free FTP Server and Mastering Upload/Download with PHP and HTML
-                                        </h3>
-                                        <p class="reviewparagraph blog-desc">In today's digital age, where sharing files
-                                            is an everyday necessity, the term FTP (File Transfer Protocol) might sound
-                                            like a complex tech jargon. But in reality, it's a simple and practical
-                                            solution designed to make file transfers between servers and clients easy.
-                                            In this guide, we'll break down FTP in plain language and show you how to
-                                            create your own FTP server for free.
-                                            Let's demystify FTP and dive into the world of Sharing Files and Creating
-                                            Your Own FTP Server for Free.
-                                        </p>
-                                        <div class="author-container flex">
-                                            <img src="img/ftp.png" loading="lazy" alt="" class="imagetestimonial" />
-                                            <div class="namecontainer">
-                                                <p class="reviewparagraph name">Kartikey Bhatnagar</p>
-                                                <p class="reviewparagraph title"><a
-                                                        href="https://medium.com/mozilla-firefox-club/a-comprehensive-guide-creating-your-own-free-ftp-server-and-mastering-upload-download-with-php-8db5e21ad097">Firefox
-                                                        Club</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="itemcontainer">
-                                        <div class="radial-gradient"></div>
-                                        <h3 class="sectionsmallheaders">Unlocking Identity: A Deep Dive into
-                                            Decentralized Identifiers (DIDs)</h3>
-                                        <p class="reviewparagraph blog-desc"> The idea of decentralized identifiers
-                                            (DIDs), which are a standardized way to achieve self-sovereign identity
-                                            using cryptographic keys and distributed ledgers. It describes the process
-                                            of creating,
-                                            publishing, and authenticating DIDs, and the benefits they offer, such as
-                                            privacy, control, reduced data silos, future-proofing, auditability, and
-                                            user-centric empowerment.
-                                        </p>
-                                        <div class="author-container flex">
-                                            <img src="https://miro.medium.com/v2/resize:fill:112:112/0*nLL9f9E8bb8PCCq-.jpeg"
-                                                loading="lazy" alt="" class="imagetestimonial" />
-                                            <div class="namecontainer">
-                                                <p class="reviewparagraph name">Shaan Jain</p>
-                                                <p class="reviewparagraph title"><a
-                                                        href="https://medium.com/mozilla-firefox-club/unlocking-identity-a-deep-dive-into-decentralized-identifiers-dids-1e694f42dcc5">Firefox
-                                                        Club</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="verticaltestimonialgrid">
-                                    <div class="itemcontainer">
-                                        <div class="radial-gradient"></div>
-                                        <h3 class="sectionsmallheaders">The LLM Revolution: How AI is Reshaping Search
-                                        </h3>
-                                        <p class="reviewparagraph blog-desc">The web page context explains what LLMs
-                                            (large language models) are and how they are changing the internet.
-                                            LLMs are AI models that can understand and generate natural language, as
-                                            well as search and analyze information from various sources.
-                                            LLMs are used to power search engines and recommendation systems, such as
-                                            WanderWise, a travel tool that helps users find the best camping spots.
-                                            LLMs have the potential to impact web traffic and SEO strategies</p>
-                                        <div class="author-container flex">
-                                            <img src="https://miro.medium.com/v2/resize:fill:112:112/1*wtBOIcjLH94qs7gdb6hABw.png"
-                                                loading="lazy" alt="" class="imagetestimonial" />
-                                            <div class="namecontainer">
-                                                <p class="reviewparagraph name">Niraj Namjoshi</p>
-                                                <p class="reviewparagraph title"><a
-                                                        href="https://medium.com/mozilla-firefox-club/the-llm-revolution-how-ai-is-reshaping-search-74f3306ab5e1">Firefox
-                                                        Club</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="itemcontainer">
-                                        <div class="radial-gradient"></div>
-                                        <h3 class="sectionsmallheaders">Cloud Computing: A Brief Intoduction</h3>
-                                        <p class="reviewparagraph blog-desc">Cloud computing is the delivery of
-                                            computing resources over the internet like storage , database , networking
-                                            and software . Gone are the days when people used to buy these & also had to
-                                            manage the physical servers which was tedious .
-                                            Today , these resources are available at affordable prices which helps in
-                                            reducing the operating costs , scaling and efficiently running your
-                                            infrastructure needs. The public cloud is the most common deployment model
-                                            of cloud computing. It is provided for public use and the users have no
-                                            control over the infrastructure.
-                                        </p>
-                                        <div class="author-container flex">
-                                            <img src="https://miro.medium.com/v2/resize:fill:112:112/1*cmvzjfiuk3vO4YCMBKN2QQ.png"
-                                                loading="lazy" alt="" class="imagetestimonial" />
-                                            <div class="namecontainer">
-                                                <p class="reviewparagraph name">Naman</p>
-                                                <p class="reviewparagraph title"><a
-                                                        href="https://medium.com/mozilla-firefox-club/cloud-computing-a-brief-introduction-26aaae3929eb">Firefox
-                                                        Club</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
+                    <div id="Blog" class="section header"></div>
 
+                    <script>
+                        const blogPosts = [
+                            {
+                                id: 1,
+                                title: "Red Teaming: The Golden Ticket Attack",
+                                image: "https://miro.medium.com/v2/resize:fit:1400/1*xtMTiQmgvYOUthu8Ly1O2w.png",
+                                description: "The world of cybersecurity is constantly evolving, with new threats emerging regularly. To stay ahead of these ever-growing risks, organizations need to prepare proactively.",
+                                author: "Utkarsh Tyagi",
+                                autheredDate: "2024-12-28",
+                                authorTitle: "Firefox Club",
+                                authorLink: "https://medium.com/mozilla-firefox-club/red-teaming-the-golden-ticket-attack-9447fc423970",
+                                imageUrl: "https://miro.medium.com/v2/resize:fill:176:176/1*iDEnh-js3kFGnoHmXWEfaw.png"
+                            },
+                            {
+                                id: 2,
+                                title: "Skip the lag, keep the cache: The Hidden Shortcut to Lightning-Fast Web Pages",
+                                image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fe2r3p4d8tc88k9iekcyy.png",
+                                description: "Learn how to reduce web page rendering time by over 7x using the content-visibility CSS property. This blog explains how it optimizes rendering by skipping offscreen elements, improves performance in SPAs, and outperforms display: none for hiding/unhiding content efficiently.",
+                                author: "Keshav Aneja",
+                                autheredDate: "2025-01-13",
+                                authorTitle: "Firefox Club",
+                                authorLink: "https://medium.com/@keshav.aneja09/skip-the-lag-keep-the-cache-the-hidden-shortcut-to-lightning-fast-web-pages-c15ac4598c97",
+                                imageUrl: "https://miro.medium.com/v2/resize:fill:176:176/1*WJ98Hf_OVsJ0dG8J0sA0dA.jpeg",
+                            },
+                            {
+                                id: 3,
+                                title: "Algorithmic Secrets of Viral Content",
+                                image: "https://miro.medium.com/v2/resize:fit:1400/1*hpa6rNYRX524A2djnDHToQ.jpeg",
+                                description: "Have you ever wondered why random content like meme templates, catchy songs, or viral dance moves suddenly dominate social media feeds? At first glance, what may seem like instant online virality is the outcome of carefully designed algorithms.",
+                                author: "Sujaa Shri",
+                                autheredDate: "2024-11-11",
+                                authorTitle: "Firefox Club",
+                                authorLink: "https://medium.com/mozilla-firefox-club/algorithmic-secrets-of-viral-content-08cc9567c553",
+                                imageUrl: "https://miro.medium.com/v2/da:true/resize:fill:176:176/0*ckbjiKN4OrP1NkNi",
+                            },
+                            {
+                                id: 4,
+                                title: "The Rise of AI Powered Code Generation: What it means for developers",
+                                image: "https://miro.medium.com/v2/resize:fit:1400/0*5-GQBqSzRsVDmdlH.jpeg",
+                                description: "In recent years, artificial intelligence (AI) has made remarkable strides across various fields, including software development. One of its most fascinating applications is in AI-powered code generation.",
+                                author: "Vajran Kannadasan",
+                                autheredDate: "2024-10-31",
+                                authorTitle: "Firefox Club",
+                                authorLink: "https://medium.com/mozilla-firefox-club/the-rise-of-ai-powered-code-generation-what-it-means-for-developers-1fd2d52d3bc5",
+                                imageUrl: "https://miro.medium.com/v2/da:true/resize:fill:176:176/0*OQbPnt8nQwm3mLZG",
+                            }
+                        ];
+                    
+                        function createBlogPostElement(postData) {
+                            const postContainer = document.createElement('a'); 
+                            postContainer.classList.add('itemcontainer');
+                            postContainer.href = postData.authorLink;
+                            postContainer.target = '_blank';
+                            postContainer.style.textDecoration = 'none';
+                    
+                            const radialGradient = document.createElement('div');
+                            radialGradient.classList.add('radial-gradient');
+                            postContainer.appendChild(radialGradient);
+                    
+                            const blogImage = document.createElement('img');
+                            blogImage.src = postData.image;
+                            blogImage.alt = `${postData.title} Image`;
+                            blogImage.style = 'width: 100%; height: 200px; object-position: center; object-fit: cover;';
+                            postContainer.appendChild(blogImage);
+                    
+                            const title = document.createElement('h3');
+                            title.classList.add('sectionsmallheaders');
+                            title.textContent = postData.title;
+                            postContainer.appendChild(title);
+                    
+                            const description = document.createElement('p');
+                            description.classList.add('reviewparagraph', 'blog-desc');
+                            description.textContent = postData.description;
+                            postContainer.appendChild(description);
+                    
+                            const authorContainer = document.createElement('div');
+                            authorContainer.classList.add('author-container', 'flex');
+                    
+                            const authorImage = document.createElement('img');
+                            authorImage.src = postData.imageUrl;
+                            authorImage.alt = '';
+                            authorImage.classList.add('imagetestimonial');
+                            authorContainer.appendChild(authorImage);
+                    
+                            const nameContainer = document.createElement('div');
+                            nameContainer.classList.add('namecontainer');
+                    
+                            const authorName = document.createElement('p');
+                            authorName.classList.add('reviewparagraph', 'name');
+                            authorName.textContent = postData.author;
+                            nameContainer.appendChild(authorName);
+                    
+                            const authorTitle = document.createElement('p');
+                            authorTitle.classList.add('reviewparagraph', 'title');
+                            const authorLink = document.createElement('a');
+                            authorLink.href = postData.authorLink;
+                            authorLink.textContent = postData.authorTitle;
+                            authorLink.style.textDecoration = 'none';
+                            authorTitle.appendChild(authorLink);
+                            nameContainer.appendChild(authorTitle);
+                    
+                            const authoredDate = document.createElement('p');
+                            authoredDate.classList.add('reviewparagraph', 'date');
+                            authoredDate.textContent = `Date: ${postData.autheredDate}`;
+                            nameContainer.appendChild(authoredDate);
+                    
+                            authorContainer.appendChild(nameContainer);
+                            postContainer.appendChild(authorContainer);
+                    
+                            return postContainer;
+                        }
+                    
+                        function renderBlogPosts() {
+                            const blogSection = document.getElementById('Blog');
+                            const container = document.createElement('div');
+                            container.classList.add('container', 'gallery', 'bottomborder');
+                    
+                            const header = document.createElement('h2');
+                            header.classList.add('sectionnewheaders');
+                            header.innerHTML = 'Blog Posts<br />';
+                            container.appendChild(header);
+                    
+                            const reviewsContainer = document.createElement('div');
+                            reviewsContainer.classList.add('reviewscontainer');
+                    
+                            const sliderItemReview = document.createElement('div');
+                            sliderItemReview.classList.add('slideritemreview');
+                    
+                            const verticalTestimonialGrid1 = document.createElement('div');
+                            verticalTestimonialGrid1.classList.add('verticaltestimonialgrid');
+                            blogPosts.slice(0, 2).forEach(post => {
+                                verticalTestimonialGrid1.appendChild(createBlogPostElement(post));
+                            });
+                    
+                            const verticalTestimonialGrid2 = document.createElement('div');
+                            verticalTestimonialGrid2.classList.add('verticaltestimonialgrid');
+                            blogPosts.slice(2).forEach(post => {
+                                verticalTestimonialGrid2.appendChild(createBlogPostElement(post));
+                            });
+                    
+                            sliderItemReview.appendChild(verticalTestimonialGrid1);
+                            sliderItemReview.appendChild(verticalTestimonialGrid2);
+                            reviewsContainer.appendChild(sliderItemReview);
+                            container.appendChild(reviewsContainer);
+                    
+                            blogSection.appendChild(container);
+                        }
+                    
+                        renderBlogPosts();
+                    </script>
+                    
+                    
 
-                            <div data-delay="4000" data-animation="slide" class="reviewsslider w-slider"
-                                data-autoplay="true" data-easing="ease" data-hide-arrows="true"
-                                data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3"
-                                data-duration="500" data-infinite="true">
-                                <div class="w-slider-mask">
-                                    <div class="w-slide"></div>
-                                </div>
-                                <div class="w-slider-arrow-left"></div>
-                                <div class="w-slider-arrow-right"></div>
-                                <div class="slide-nav w-slider-nav w-round"></div>
+                    <a href="https://medium.com/mozilla-firefox-club" class="btn">Read More</a>
 
-                            </div>
+                    <div class="counts">
+                        <div class="p">
+                            <p id="counter">40+</p>
+                            <h4>Events</h4>
                         </div>
-                    </div>
-                </div>
-                <a href="https://medium.com/mozilla-firefox-club" class="btn">Read More</a>
-
-                <div class="counts">
-                    <div class="p">
-                        <p id="counter">40+</p>
-                        <h4>Events</h4>
-                    </div>
-                    <div class="p">
-                        <p id="counter1">25+</p>
-                        <h4>Projects</h4>
-                    </div>
-                    <div class="p">
-                        <p id="counter2">20+</p>
-                        <h4>Articles</h4>
-                    </div>
-                    <div class="p">
-                        <p id="counter3">2000+</p>
-                        <h4>Followers</h4>
-                    </div>
-
-                </div>
-
-                <div id="Faculty" class="section header lastsection">
-                    <div class="container gallery bottomborder bottomnone topbordernone">
-                        <div class="titlecontainerbottom">
-                            <h2 class="sectionnewheaders">Our Faculty Coordinator<br /></h2>
+                        <div class="p">
+                            <p id="counter1">25+</p>
+                            <h4>Projects</h4>
                         </div>
-                        <div class="faculty-card-container flex">
-                            <div class="card-wrapper flex">
-                                <div class="faculty-card faculty-card-front  flex">
-                                    <div class="info-card flex">
-                                        <div class="profile-pic flex">
-                                            <img src="img/profile.png" alt="Mr. Jayakumar S" />
-                                        </div>
-                                        <div class="faculty-name">Mr. Jayakumar S</div>
-                                        <div class="position">Faculty Coordinator</div>
+                        <div class="p">
+                            <p id="counter2">20+</p>
+                            <h4>Articles</h4>
+                        </div>
+                        <div class="p">
+                            <p id="counter3">2000+</p>
+                            <h4>Followers</h4>
+                        </div>
 
-                                    </div>
-                                    <p class="check">Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1 at
-                                        Vellore Institute of Technology (VIT) in the School of Computer Science and
-                                        Engineering (SCOPE). Jayakumar's areas of expertise include Open Source
-                                        Programming, Network Security, Storage Technologies, and Machine Learning. His
-                                        research interests are in the use of technology in education and developing
-                                        open-source software that takes into consideration the unique needs of learners
-                                    </p>
-                                    <!-- <div class="flex socials">
+                    </div>
+
+                    <div id="Faculty" class="section header lastsection">
+                        <div class="container gallery bottomborder bottomnone topbordernone">
+                            <div class="titlecontainerbottom">
+                                <h2 class="sectionnewheaders">Our Faculty Coordinator<br /></h2>
+                            </div>
+                            <div class="faculty-card-container flex">
+                                <div class="card-wrapper flex">
+                                    <div class="faculty-card faculty-card-front  flex">
+                                        <div class="info-card flex">
+                                            <div class="profile-pic flex">
+                                                <img src="img/profile.png" alt="Mr. Jayakumar S" />
+                                            </div>
+                                            <div class="faculty-name">Mr. Jayakumar S</div>
+                                            <div class="position">Faculty Coordinator</div>
+
+                                        </div>
+                                        <p class="check">Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1
+                                            at
+                                            Vellore Institute of Technology (VIT) in the School of Computer Science and
+                                            Engineering (SCOPE). Jayakumar's areas of expertise include Open Source
+                                            Programming, Network Security, Storage Technologies, and Machine Learning.
+                                            His
+                                            research interests are in the use of technology in education and developing
+                                            open-source software that takes into consideration the unique needs of
+                                            learners
+                                        </p>
+                                        <!-- <div class="flex socials">
                           <div class="social-icon flex">
                             <a href="https://www.linkedin.com/in/iamjayakumars">
                             <img src="img/linkedin.png" alt="linkedin" />
@@ -829,54 +867,54 @@
                             <img src="img/email.png" alt="email"/>
                           </div>
                         </div> -->
-                                    <div class="profile-icons">
-                                        <a class="profile_fab" href="https://www.linkedin.com/in/iamjayakumars">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                        <a class="profile_fab" href="https://github.com/iamjayakumars">
-                                            <i class="fab fa-github"></i>
-                                        </a>
+                                        <div class="profile-icons">
+                                            <a class="profile_fab" href="https://www.linkedin.com/in/iamjayakumars">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                            <a class="profile_fab" href="https://github.com/iamjayakumars">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- <div class="faculty-card faculty-card-back flex">
+                                    <!-- <div class="faculty-card faculty-card-back flex">
                         <p>Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1 at Vellore Institute of Technology (VIT) in the School of Computer Science and Engineering (SCOPE). Jayakumar's areas of expertise include Open Source Programming, Network Security, Storage Technologies, and Machine Learning. His research interests are in the use of technology in education and developing open-source software that takes into consideration the unique needs of learners</p>
                       </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="Board" class="section header">
-                    <div class="container gallery bottomborder bottomnone topbordernone">
-                        <h2 class="sectionnewheaders">Our Team<br /></h2>
-                        <div id="board-members-container" class="benefitscontainer spacetop"></div>
-                    </div>
+                    <div id="Board" class="section header">
+                        <div class="container gallery bottomborder bottomnone topbordernone">
+                            <h2 class="sectionnewheaders">Our Team<br /></h2>
+                            <div id="board-members-container" class="benefitscontainer spacetop"></div>
+                        </div>
 
-                    <script>
-                        // Data for board members
-                        const boardMembers = [
-                            { name: 'Utkarsh Tyagi', designation: 'Chairperson', image: './img_board/24-25/chair.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/utkarsh-tyagi-/', github: 'https://github.com/utkarsh-creator', instagram: 'https://www.instagram.com/utkarshtyagi07/' } },
-                            { name: 'Namah Singhal', designation: 'General Secretary', image: './img_board/24-25/gensec.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/namah-singhal-983446217/', github: 'https://github.com/NAMAH942', instagram: 'https://www.instagram.com/nam.ahhh28_/' } },
-                            { name: 'Chaitanay Kapoor', designation: 'Vice Chairperson', image: './img_board/24-25/vc.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/chaitanay-kapoor-717bb8299/', github: 'https://github.com/chaitanay2004', instagram: 'https://www.instagram.com/chaitanaykapoor/' } },
-                            { name: 'Vinayak Raina', designation: 'Co-Secretary', image: './img_board/24-25/cosec.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/vinayak-raina-08a71a253', github: 'https://github.com/RAINAVINAYAK16', instagram: 'https://www.instagram.com/raina.vinayak/' } },
-                            { name: 'Keshav Aneja', designation: 'Technical Head', image: './img_board/24-25/tech.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/keshav-aneja', github: 'https://github.com/Keshav-Aneja', instagram: 'https://www.instagram.com/k.aneja09/' } },
-                            { name: 'Harshit PG', designation: 'Projects Head', image: './img_board/24-25/project.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/harshit-p-g-a87623272/', github: 'https://github.com/HarshitPG', instagram: 'https://www.instagram.com/harshitpg/' } },
-                            { name: 'Sameer Mahindru', designation: 'Events Head', image: './img_board/24-25/events.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/sameer-mahindru-39ba91248/', github: 'https://github.com/CodesBySammy', instagram: 'https://www.instagram.com/spammyyy._._/' } },
-                            { name: 'Kandarp Chandra', designation: 'Research and Development Head', image: './img_board/24-25/r&d.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/kandarp-chandra-b32ba4251/', github: 'https://github.com/kandarpchandra', instagram: 'https://www.instagram.com/kandarp._._/' } },
-                            { name: 'Kanishka Viswanathan', designation: 'Publicity Head', image: './img_board/24-25/publicity.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/kanishka-viswanathan', github: 'https://github.com/KanishkaViswanathan', instagram: 'https://www.instagram.com/_kxnishhh/' } },
-                            { name: 'Divyansh Gautam', designation: 'Design Head', image: './img_board/24-25/design.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/divyansh-gautam-323b47266', github: 'https://github.com/i-divyansh', instagram: 'https://www.instagram.com/i._divyansh/' } },
-                            { name: 'Himika Bansal', designation: 'HR Head', image: './img_board/24-25/hr.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/himika-bansal', github: 'https://github.com/himika-bansal', instagram: 'https://www.instagram.com/himika.bansal/' } },
-                            { name: 'Anshul Kedia', designation: 'Finance Head', image: './img_board/24-25/finance.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/anshul-kedia-78965b245', github: 'https://github.com/anshulkedia', instagram: 'https://www.instagram.com/anshul.kediaaa/' } },
-                            { name: 'Harshvardhan Singh', designation: 'Management Head', image: './img_board/24-25/management.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/harshvardhan-singh-b66728250/', github: 'https://github.com/harshvar36', instagram: 'https://www.instagram.com/harshvar_0036/' } },
-                            { name: 'Akshat Kumar Jha', designation: 'Editorial Head', image: './img_board/24-25/editorial.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/akshat-jha-bbb861254', github: 'https://github.com/axe-hat', instagram: 'https://www.instagram.com/axe.hat/' } },
-                            { name: 'Kanha Khantaal', designation: 'Outreach Head', image: './img_board/24-25/outreach.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/kanha-khantaal-829302258', github: 'https://github.com/Kanha02052002', instagram: 'https://www.instagram.com/k2g_02/' } },
-                            { name: 'Samaksh Arjani', designation: 'Creative Head', image: './img_board/24-25/creative.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/samaksh-arjani-262a12253/', github: 'https://github.com/samaksharjani2004', instagram: 'https://www.instagram.com/chiiinuu._6/' } },
-                        ];
-                        // Function to generate HTML for board members
-                        const createBoardMembers = (members) => {
-                            const container = document.getElementById("board-members-container");
-                            members.forEach((member) => {
-                                const memberHTML = `
+                        <script>
+                            // Data for board members
+                            const boardMembers = [
+                                { name: 'Utkarsh Tyagi', designation: 'Chairperson', image: './img_board/24-25/chair.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/utkarsh-tyagi-/', github: 'https://github.com/utkarsh-creator', instagram: 'https://www.instagram.com/utkarshtyagi07/' } },
+                                { name: 'Namah Singhal', designation: 'General Secretary', image: './img_board/24-25/gensec.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/namah-singhal-983446217/', github: 'https://github.com/NAMAH942', instagram: 'https://www.instagram.com/nam.ahhh28_/' } },
+                                { name: 'Chaitanay Kapoor', designation: 'Vice Chairperson', image: './img_board/24-25/vc.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/chaitanay-kapoor-717bb8299/', github: 'https://github.com/chaitanay2004', instagram: 'https://www.instagram.com/chaitanaykapoor/' } },
+                                { name: 'Vinayak Raina', designation: 'Co-Secretary', image: './img_board/24-25/cosec.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/vinayak-raina-08a71a253', github: 'https://github.com/RAINAVINAYAK16', instagram: 'https://www.instagram.com/raina.vinayak/' } },
+                                { name: 'Keshav Aneja', designation: 'Technical Head', image: './img_board/24-25/tech.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/keshav-aneja', github: 'https://github.com/Keshav-Aneja', instagram: 'https://www.instagram.com/k.aneja09/' } },
+                                { name: 'Harshit PG', designation: 'Projects Head', image: './img_board/24-25/project.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/harshit-p-g-a87623272/', github: 'https://github.com/HarshitPG', instagram: 'https://www.instagram.com/harshitpg/' } },
+                                { name: 'Sameer Mahindru', designation: 'Events Head', image: './img_board/24-25/events.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/sameer-mahindru-39ba91248/', github: 'https://github.com/CodesBySammy', instagram: 'https://www.instagram.com/spammyyy._._/' } },
+                                { name: 'Kandarp Chandra', designation: 'Research and Development Head', image: './img_board/24-25/r&d.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/kandarp-chandra-b32ba4251/', github: 'https://github.com/kandarpchandra', instagram: 'https://www.instagram.com/kandarp._._/' } },
+                                { name: 'Kanishka Viswanathan', designation: 'Publicity Head', image: './img_board/24-25/publicity.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/kanishka-viswanathan', github: 'https://github.com/KanishkaViswanathan', instagram: 'https://www.instagram.com/_kxnishhh/' } },
+                                { name: 'Divyansh Gautam', designation: 'Design Head', image: './img_board/24-25/design.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/divyansh-gautam-323b47266', github: 'https://github.com/i-divyansh', instagram: 'https://www.instagram.com/i._divyansh/' } },
+                                { name: 'Himika Bansal', designation: 'HR Head', image: './img_board/24-25/hr.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/himika-bansal', github: 'https://github.com/himika-bansal', instagram: 'https://www.instagram.com/himika.bansal/' } },
+                                { name: 'Anshul Kedia', designation: 'Finance Head', image: './img_board/24-25/finance.webp', socialLinks: { linkedin: 'http://www.linkedin.com/in/anshul-kedia-78965b245', github: 'https://github.com/anshulkedia', instagram: 'https://www.instagram.com/anshul.kediaaa/' } },
+                                { name: 'Harshvardhan Singh', designation: 'Management Head', image: './img_board/24-25/management.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/harshvardhan-singh-b66728250/', github: 'https://github.com/harshvar36', instagram: 'https://www.instagram.com/harshvar_0036/' } },
+                                { name: 'Akshat Kumar Jha', designation: 'Editorial Head', image: './img_board/24-25/editorial.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/akshat-jha-bbb861254', github: 'https://github.com/axe-hat', instagram: 'https://www.instagram.com/axe.hat/' } },
+                                { name: 'Kanha Khantaal', designation: 'Outreach Head', image: './img_board/24-25/outreach.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/kanha-khantaal-829302258', github: 'https://github.com/Kanha02052002', instagram: 'https://www.instagram.com/k2g_02/' } },
+                                { name: 'Samaksh Arjani', designation: 'Creative Head', image: './img_board/24-25/creative.webp', socialLinks: { linkedin: 'https://www.linkedin.com/in/samaksh-arjani-262a12253/', github: 'https://github.com/samaksharjani2004', instagram: 'https://www.instagram.com/chiiinuu._6/' } },
+                            ];
+                            // Function to generate HTML for board members
+                            const createBoardMembers = (members) => {
+                                const container = document.getElementById("board-members-container");
+                                members.forEach((member) => {
+                                    const memberHTML = `
                             <div class="itemcontainer2 aligntop borderbottomnew">
                               <div class="iconcontainer">
                                 <div class="circular-image">
@@ -889,17 +927,17 @@
                                   <h3 class="heading-3">${member.name}</h3>
                                   <p class="paragraphdesign">${member.designation}<br /><br>
                                     ${member.socialLinks.linkedin
-                                        ? `<a class="profile_fab" href="${member.socialLinks.linkedin}" target="_blank"><i class="fab fa-linkedin-in"></i></a>`
-                                        : ""
-                                    }
+                                            ? `<a class="profile_fab" href="${member.socialLinks.linkedin}" target="_blank"><i class="fab fa-linkedin-in"></i></a>`
+                                            : ""
+                                        }
                                     ${member.socialLinks.github
-                                        ? `<a class="profile_fab" href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
-                                        : ""
-                                    }
+                                            ? `<a class="profile_fab" href="${member.socialLinks.github}" target="_blank"><i class="fab fa-github"></i></a>`
+                                            : ""
+                                        }
                                     ${member.socialLinks.instagram
-                                        ? `<a class="profile_fab" href="${member.socialLinks.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>`
-                                        : ""
-                                    }
+                                            ? `<a class="profile_fab" href="${member.socialLinks.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>`
+                                            : ""
+                                        }
                                   </p>
                                 </div>
                               </div>
@@ -907,41 +945,41 @@
                               <div class="eclipse benefitseclipse"></div>
                             </div>
                           `;
-                                container.innerHTML += memberHTML;
-                            });
-                        };
+                                    container.innerHTML += memberHTML;
+                                });
+                            };
 
-                        // Call the function to generate and inject board members
-                        createBoardMembers(boardMembers);
-                    </script>
-                </div>
-                <a href="alumniboard.html" class="btn">Alumni Board Members</a>
-                <!--End new Branch-->
+                            // Call the function to generate and inject board members
+                            createBoardMembers(boardMembers);
+                        </script>
+                    </div>
+                    <a href="alumniboard.html" class="btn">Alumni Board Members</a>
+                    <!--End new Branch-->
 
-                <!-----contact----------------->
-                <div id="contact">
-                    <div class="container">
-                        <div class="row">
-                            <div class="contact-left">
-                                <h1 class="sub-titles">Contact Us</h1>
-                                <p><i class="fa-solid fa-paper-plane"></i>pr.mozillavit@gmail.com</p>
+                    <!-----contact----------------->
+                    <div id="contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="contact-left">
+                                    <h1 class="sub-titles">Contact Us</h1>
+                                    <p><i class="fa-solid fa-paper-plane"></i>pr.mozillavit@gmail.com</p>
 
 
 
-                            </div>
-                            <div class="contact-right">
-                                <form name="submit-to-google-sheet">
-                                    <input type="text" name="Name" placeholder="Your Name" required>
-                                    <input type="email" name="Email" placeholder="Your Email" required>
-                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                                    <button type="submit" class="btn btn2">Submit</button>
-                                </form>
-                                <span id="msg"></span>
+                                </div>
+                                <div class="contact-right">
+                                    <form name="submit-to-google-sheet">
+                                        <input type="text" name="Name" placeholder="Your Name" required>
+                                        <input type="email" name="Email" placeholder="Your Email" required>
+                                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                        <button type="submit" class="btn btn2">Submit</button>
+                                    </form>
+                                    <span id="msg"></span>
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
 

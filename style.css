@@ -3897,7 +3897,7 @@ label {
   padding: 32px;
   transition: all 0.2s;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 0 0 1px #000;
 }
 
@@ -3908,6 +3908,12 @@ label {
 }
 
 @media (max-width: 800px) {
+
+  .benefitscontainer {
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+
   .itemcontainer2 {
     width: calc(50% - 16px); 
   }
@@ -3915,7 +3921,7 @@ label {
 
 @media (max-width: 500px) {
   .itemcontainer2 {
-    width: 100%; 
+    width: 80%; 
   }
 }
 
@@ -4435,8 +4441,8 @@ form .btn2 {
   grid-column-gap: 2em;
   grid-row-gap: 2em;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  justify-content: center; /* Center the items within the container */
+  flex-wrap: wrap; 
+  justify-content: center
 }
 
 .benefitscontainer.spacetop {
@@ -4474,9 +4480,9 @@ form .btn2 {
 
 .benefitscontentright {
   z-index: 10;
-  width: 110%;
-  grid-column-gap: 0.75em;
-  grid-row-gap: 0.75em;
+  width: 100%;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
   flex-direction: column;
   display: flex;
   position: relative;
